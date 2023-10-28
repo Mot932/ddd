@@ -1,0 +1,13 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.checkbox1 }}
+    {{ form.checkbox1.label_tag }}
+    <br>
+    {{ form.checkbox2 }}
+    {{ form.checkbox2.label_tag }}
+    <br>
+    {{ form.checkbox3 }}
+    {{ form.checkbox3.label_tag }}
+    <br>
+    <input type="submit" value="Отправить">
+</form>
